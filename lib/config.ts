@@ -39,14 +39,10 @@ export const siteConfig = {
     line2: "Shanti Nagar, Chhota Barha, Alambagh, Lucknow, Uttar Pradesh",
     pincode: "226005",
     country: "India",
-    // Basic no-API-key Google Maps embed centered on the address text below.
-    // Deliberately geographic-only (no business/person name) for more reliable
-    // geocoding. For a pinpoint-accurate marker, replace this with the iframe
-    // "src" from Google Maps -> Search the exact location -> Share -> Embed a
-    // map -> Copy HTML.
-    mapEmbedSrc: `https://maps.google.com/maps?q=${encodeURIComponent(
-      "Shanti Nagar, Chhota Barha, Alambagh, Lucknow, Uttar Pradesh 226005"
-    )}&z=15&output=embed`,
+    // Official Google Maps "Embed a map" link for the business's actual Maps
+    // listing (LIC Of India, Life Plus Office, Amitabh Dixit).
+    mapEmbedSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.721206502994!2d80.91603320562061!3d26.817004377934445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfc3ecd27f88b%3A0x307a4746d83e1e24!2sL%20I%20C%20Of%20India%2C%20Life%20Plus%20Office%2C%20Amitabh%20Dixit!5e0!3m2!1sen!2sin!4v1787914004192!5m2!1sen!2sin",
   },
 
   social: {
