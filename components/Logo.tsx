@@ -1,18 +1,21 @@
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig } from "@/lib/config";
 
 export function Logo({ inverted = false }: { inverted?: boolean }) {
   return (
     <Link href="/" className="group flex items-center gap-2.5" aria-label={`${siteConfig.brandName} home`}>
-      <span
-        className={`flex h-10 w-10 items-center justify-center rounded-full border ${
-          inverted ? "border-ivory/30 text-ivory" : "border-navy-900/15 text-navy-900"
-        }`}
-      >
-        <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.6">
-          <path d="M12 3.2 5.5 5.8v5.4c0 4.5 2.8 8.3 6.5 9.2 3.7-.9 6.5-4.7 6.5-9.2V5.8L12 3.2Z" />
-          <path d="m9.2 12 1.9 1.9 3.7-4" />
-        </svg>
+      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white shadow-sm ring-1 ring-black/5">
+        <span className="relative h-9 w-9">
+          <Image
+            src="/logo-mark.png"
+            alt={`${siteConfig.brandName} logo`}
+            fill
+            sizes="36px"
+            className="object-contain"
+            priority
+          />
+        </span>
       </span>
       <span className="flex flex-col leading-none">
         <span
