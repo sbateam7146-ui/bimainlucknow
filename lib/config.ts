@@ -35,15 +35,17 @@ export const siteConfig = {
   email: "sbateam7146@gmail.com",
 
   address: {
-    line1: "St. Angira's School Campus, Shanti Nagar",
-    line2: "Chhota Barha (Bara Barha), Alambagh, Lucknow, Uttar Pradesh",
+    line1: "LIC of India, Life Plus Office, Amitabh Dixit",
+    line2: "Shanti Nagar, Chhota Barha, Alambagh, Lucknow, Uttar Pradesh",
     pincode: "226005",
     country: "India",
     // Basic no-API-key Google Maps embed centered on the address text below.
-    // For a pinpoint-accurate marker, replace this with the iframe "src" from
-    // Google Maps -> Search the exact location -> Share -> Embed a map -> Copy HTML.
+    // Deliberately geographic-only (no business/person name) for more reliable
+    // geocoding. For a pinpoint-accurate marker, replace this with the iframe
+    // "src" from Google Maps -> Search the exact location -> Share -> Embed a
+    // map -> Copy HTML.
     mapEmbedSrc: `https://maps.google.com/maps?q=${encodeURIComponent(
-      "St. Angira's School Campus, Shanti Nagar, Alambagh, Lucknow, Uttar Pradesh 226005"
+      "Shanti Nagar, Chhota Barha, Alambagh, Lucknow, Uttar Pradesh 226005"
     )}&z=15&output=embed`,
   },
 
