@@ -17,14 +17,16 @@ one file: `lib/config.ts`.
       simple placeholder icon mark
 
 ## 2. Contact details
-- [ ] Business phone number (currently a placeholder in `lib/config.ts`)
-- [ ] WhatsApp Business number
-- [ ] Business email address (currently a placeholder: info@bimainlucknow.com —
-      confirm this mailbox actually exists and is monitored, or provide another)
-- [ ] Office address (line 1, area, PIN code)
-- [ ] Business hours
-- [ ] Google Maps link for the office (Google Maps → Share → Embed a map → copy
-      the src URL into `mapEmbedSrc` in `lib/config.ts`)
+- [x] Business phone number: +91 87073 90508
+- [x] WhatsApp number (same as phone): +91 87073 90508
+- [x] Business email address: sbateam7146@gmail.com (confirmed)
+- [x] Office address: St. Angira's School Campus, Shanti Nagar, Chhota Barha
+      (Bara Barha), Alambagh, Lucknow, Uttar Pradesh, 226005
+- [ ] Business hours (still a placeholder)
+- [~] Google Maps embed — currently using a basic text-search embed (no API
+      key) centered on the address above. For a pinpoint-accurate marker, go to
+      Google Maps, search the exact location, click Share → Embed a map → Copy
+      HTML, and send that to us to swap into `mapEmbedSrc` in `lib/config.ts`.
 
 ## 3. Regulatory / compliance information
 - [ ] IRDAI registration number / composite corporate agent license number (if

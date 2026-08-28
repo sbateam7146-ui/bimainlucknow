@@ -22,26 +22,29 @@ export const siteConfig = {
   domain: "https://bimainlucknow.com",
 
   phone: {
-    display: "[+91 XXXXX XXXXX]",
-    href: "tel:+91XXXXXXXXX",
+    display: "+91 87073 90508",
+    href: "tel:+918707390508",
   },
 
   whatsapp: {
-    display: "[+91 XXXXX XXXXX]",
+    display: "+91 87073 90508",
     // Digits only, with country code, no + or spaces — used to build wa.me links.
-    numberForLink: "91XXXXXXXXXX",
+    numberForLink: "918707390508",
   },
 
-  email: "[info@bimainlucknow.com]",
+  email: "sbateam7146@gmail.com",
 
   address: {
-    line1: "[Office Address Line 1]",
-    line2: "[Locality, Lucknow, Uttar Pradesh]",
-    pincode: "[PIN Code]",
+    line1: "St. Angira's School Campus, Shanti Nagar",
+    line2: "Chhota Barha (Bara Barha), Alambagh, Lucknow, Uttar Pradesh",
+    pincode: "226005",
     country: "India",
-    // Paste a Google Maps "Embed a map" iframe src URL here once the office
-    // location is confirmed. Leave blank to show a placeholder instead.
-    mapEmbedSrc: "",
+    // Basic no-API-key Google Maps embed centered on the address text below.
+    // For a pinpoint-accurate marker, replace this with the iframe "src" from
+    // Google Maps -> Search the exact location -> Share -> Embed a map -> Copy HTML.
+    mapEmbedSrc: `https://maps.google.com/maps?q=${encodeURIComponent(
+      "St. Angira's School Campus, Shanti Nagar, Alambagh, Lucknow, Uttar Pradesh 226005"
+    )}&z=15&output=embed`,
   },
 
   social: {
