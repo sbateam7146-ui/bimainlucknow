@@ -4,7 +4,6 @@ import { Section, SectionHeading } from "@/components/Section";
 import { ButtonLink } from "@/components/Button";
 import { CompassIcon, MessageIcon, ScaleIcon, ShieldIcon, UsersIcon } from "@/components/icons";
 import { buildMetadata } from "@/lib/seo";
-import { siteConfig } from "@/lib/config";
 
 export const metadata: Metadata = buildMetadata({
   title: "About Us",
@@ -56,16 +55,18 @@ export default function AboutPage() {
             <SectionHeading eyebrow="Who We Are" title="Company Introduction" />
             <div className="mt-5 space-y-4 text-base leading-relaxed text-navy-700/85">
               <p>
-                {siteConfig.brandName} is a placeholder trading identity for an insurance
-                guidance service based in Lucknow, Uttar Pradesh, currently in the process of
-                finalising its registered business details.
+                Financial planning is, at its heart, about reaching your life&apos;s goals at the
+                right time — with the right protection in place along the way. You are precious
+                to your family, and they can&apos;t afford to lose you. But nobody knows how long
+                they will live; life is precious, yet fragile. So who looks after your family once
+                you&apos;re no longer there for them?
               </p>
               <p>
-                <span className="rounded bg-gold-100 px-1.5 py-0.5 text-sm font-medium text-gold-800">
-                  Placeholder — business owner to confirm:
-                </span>{" "}
-                a short paragraph introducing the business, how it started, and the people
-                behind it, to be provided by the business owner.
+                We work under Life Insurance Corporation of India (LIC) — an institution that has
+                stood beside millions of families across the country since 1956. Our guiding
+                motto is an ancient Sanskrit line, योगक्षेमं वहाम्यहम् (Yogakshemam Vahamyaham),
+                meaning <em>&quot;Your welfare is our responsibility.&quot;</em> It shapes every
+                conversation we have with you.
               </p>
             </div>
           </div>
@@ -76,8 +77,9 @@ export default function AboutPage() {
               <div className="rounded-2xl border border-navy-900/10 bg-ivory/60 p-5">
                 <h3 className="font-display text-lg font-semibold text-navy-900">Mission</h3>
                 <p className="mt-2 text-sm leading-relaxed text-navy-700/85">
-                  To help individuals and families make informed, confident insurance decisions
-                  through honest guidance and transparent communication.
+                  &quot;Your welfare is our responsibility&quot; — योगक्षेमं वहाम्यहम्. We help
+                  individuals and families make informed, confident insurance decisions through
+                  honest guidance and transparent communication.
                 </p>
               </div>
               <div className="rounded-2xl border border-navy-900/10 bg-ivory/60 p-5">
