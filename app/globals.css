@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8f6f1;
+  color: #0b1930;
+}
+
+::selection {
+  background-color: #e2bd5a;
+  color: #0b1930;
+}
+
+:focus-visible {
+  outline-color: #0b1930;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
